@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: docker-devfile-sample-hello-world-ypzi
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh-gitops-bot/build-e2e-cqwr-tenant/test-app-hqxc/docker-devfile-sample-hello-world-ypzi@sha256:54ce0c346125890d50a4664c671a131d328a16d42bc24e78912a7e7c308e50d3
+        name: container-image
+        resources: {}
+status: {}
